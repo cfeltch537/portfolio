@@ -38,7 +38,7 @@ export const routes = [{
 }]
 
 const router = new Router({
-  mode: 'history',
+  // mode: 'history',
   base: process.env.NODE_ENV === 'development' ? '/' : '/portfolio/',
   scrollBehavior (to, from, savedPosition) {
     if (to.hash) {
