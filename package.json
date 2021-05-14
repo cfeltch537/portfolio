@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "dev": "npm run serve"
+    "dev": "npm run serve",
+    "deploy": "node scripts/gh-pages-deploy.js"
   },
   "dependencies": {
     "date-fns": "^2.18.0",
@@ -27,6 +28,7 @@
     "core-js": "^3.6.4",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "execa": "latest",
     "raw-loader": "^4.0.1",
     "sass": "^1.32.5",
     "sass-loader": "^10.1.1",
