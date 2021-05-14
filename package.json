@@ -6,8 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "dev": "npm run serve",
-    "deploy": "cross-env NODE_ENV=production node scripts/gh-pages-deploy.js"
+    "dev": "cross-env NODE_ENV=development npm run serve",
+    "deploy": "node scripts/gh-pages-deploy.js"
   },
   "dependencies": {
     "date-fns": "^2.18.0",

@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import { publicPath } from '../../vue.config.js'
 
 Vue.use(Router)
 
@@ -40,7 +39,7 @@ export const routes = [{
 
 const router = new Router({
   mode: 'history',
-  base: publicPath,
+  base: process.env.NODE_ENV === 'development' ? '/' : '/portfolio/',
   scrollBehavior (to, from, savedPosition) {
     if (to.hash) {
       return {
