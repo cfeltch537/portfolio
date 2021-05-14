@@ -1,6 +1,6 @@
 {
-  "name": "@carbon/vue",
-  "version": "1.2.0",
+  "name": "portfolio",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",

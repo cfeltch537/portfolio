@@ -13,5 +13,9 @@ module.exports = {
   // https://cli.vuejs.org/config/#transpiledependencies
   transpileDependencies: [
     'vuetify'
-  ]
+  ],
+
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/portfolio/'
+    : '/'
 }
