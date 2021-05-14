@@ -45,7 +45,7 @@ export default {
           category: 'Music',
           created: 'Apr 11, 2020',
           readtime: '2 min',
-          image: './images/cards/cymot.png',
+          image: './images/cards/cymot_site.png',
           title: 'CyMOT',
           content: 'A Learning Management System (LMS) developed to deliver manufacturing specific cybersecurity content, built off of the Moodle open-source LMS.',
           link: '/cymot'
