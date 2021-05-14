@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import { publicPath } from '../../vue.config.js'
 
 Vue.use(Router)
 
@@ -39,7 +40,7 @@ export const routes = [{
 
 const router = new Router({
   mode: 'history',
-  base: process.env.BASE_URL || '/',
+  base: publicPath,
   scrollBehavior (to, from, savedPosition) {
     if (to.hash) {
       return {

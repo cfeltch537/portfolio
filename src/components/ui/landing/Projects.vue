@@ -31,7 +31,7 @@ export default {
           category: 'Business',
           created: 'Sep 21, 2020',
           readtime: '13 min',
-          image: '/images/cards/resteaze.png',
+          image: './images/cards/resteaze.png',
           title: 'RestEaze Sleep Monitor',
           content: 'A wearable device, mobile app, web service and machine learners. Designed as an en-to-end solution for monitoring biomarkers of sleep disorder through leg movements during sleep.',
           link: '/tanzen'
@@ -45,7 +45,7 @@ export default {
           category: 'Music',
           created: 'Apr 11, 2020',
           readtime: '2 min',
-          image: '/images/cards/cymot.png',
+          image: './images/cards/cymot.png',
           title: 'CyMOT',
           content: 'A Learning Management System (LMS) developed to deliver manufacturing specific cybersecurity content, built off of the Moodle open-source LMS.',
           link: '/cymot'
@@ -59,7 +59,7 @@ export default {
           category: 'Business',
           created: 'Sep 21, 2020',
           readtime: '13 min',
-          image: '/images/cards/closed_loop.png',
+          image: './images/cards/closed_loop.png',
           title: 'Closed Loop',
           content: 'A platform for prototyping real-time data analysis techniques and visualizations, usin the open-source lab streaming layer (LSL) library for time-synchronized data/event streaming.'        },
         tags: ['Python', 'numpy', 'scipy', 'scikit-learn', 'biosppy']
@@ -71,7 +71,7 @@ export default {
           category: 'Business',
           created: 'Sep 21, 2020',
           readtime: '13 min',
-          image: '/images/cards/everyday_wear.png',
+          image: './images/cards/everyday_wear.png',
           title: 'Everyday Wearables',
           content: 'A suite of Android apps and services to record and monitor data from physiological devices (EEG, IMU, Temp, PPG, etc.). Used for psychophysiology studies.'        },
         tags: ['Android', 'BLE', 'Bluetooth  SPP', 'Data Networking']
@@ -83,7 +83,7 @@ export default {
           category: 'Business',
           created: 'Sep 21, 2020',
           readtime: '13 min',
-          image: '/images/cards/vr_game2.png',
+          image: './images/cards/vr_game2.png',
           title: 'VR Shooter',
           content: 'A simulated a shooting range with both friendly and enemy targets appearances. The trials were meant to gausge the users performance, then put them in high and low stress scenarios.'
         },
@@ -96,7 +96,7 @@ export default {
           category: 'Startups',
           created: 'Apr 11, 2020',
           readtime: '8 min',
-          image: '/images/cards/web_portfolio.png',
+          image: './images/cards/web_portfolio.png',
           title: 'Web Portfolio',
           content: 'This site! A personal web portfolio that I\'ve re-designed countless time, to act as a supplement to my resume and playground for web development tools.',
           link: '#section-home'
