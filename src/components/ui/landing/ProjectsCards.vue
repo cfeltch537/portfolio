@@ -6,9 +6,9 @@
     color="#33333d" 
     outlined
   >
-    <v-img :src="post.image" height="250" class="rounded" style="background-color:#373740;"></v-img>
+    <v-img :src="post.image" height="40%" class="rounded" style="background-color:#373740;"></v-img>
     <div class="secondary--text text--lighten-1 text-caption d-flex mt-1">
-      {{ post.created }} - {{ post.readtime }} read
+      <!-- {{ post.created }} - {{ post.readtime }} read -->
     </div>
 
     <div class="pt-2">

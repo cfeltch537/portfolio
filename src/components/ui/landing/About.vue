@@ -16,7 +16,7 @@
             <h2 class="text-h3 text-lg-h2">Full-Stack Engineer</h2>
             <div class="text-h6 text-lg-h5 mt-5">
               <div>
-                I love writing code, and learning new technologies/tools. I've been lucky enough to gain experience with many different application areas and work on some very cool projects/products.
+                I love writing code, and learning new technologies. I've been lucky enough to gain experience with many different application areas and work on some very cool projects.
               </div>
 
               <div class="mt-4 mb-2 font-weight-bold">My Stacks</div>

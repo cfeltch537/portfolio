@@ -1,6 +1,6 @@
 <template>
   <v-sheet color="#27272f">
-    <v-container class="py-4 py-lg-8">
+    <v-container class="py-4 pt-lg-8">
       
       <!-- Experience -->
       <div class="text-center">

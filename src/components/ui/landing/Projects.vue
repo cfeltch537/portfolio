@@ -6,7 +6,13 @@
     <div class="text-h8 text-lg-h7 mb-3"><i>Note: I cannot show images/screenchots of the actual end-product for some of these as they are proprietaty.</i></div>
 
     <v-row>
-      <v-col v-for="(card, i) in cards" :key="i" cols="12" md="4">
+      <v-col
+        v-for="(card, i) in cards"
+        :key="i"
+        cols="12"
+        md="6"
+        lg="4"
+      >
         <!-- card example -->
         <Card4 v-bind="card" />
       </v-col>
@@ -33,8 +39,8 @@ export default {
           readtime: '13 min',
           image: './images/cards/resteaze.png',
           title: 'RestEaze Sleep Monitor',
-          content: 'A wearable device, mobile app, web service and machine learners. Designed as an en-to-end solution for monitoring biomarkers of sleep disorder through leg movements during sleep.',
-          link: '/tanzen'
+          content: 'A wearable device, mobile app, web service and machine learners. Designed as an en-to-end solution for monitoring biomarkers of sleep disorder through leg movements during sleep.'
+          // link: '/tanzen'
         },
         tags: ['ARM', 'BLE', 'Android/iOS', 'SQL', 'MEVN', 'Machine Learning']
       }, {
@@ -47,8 +53,8 @@ export default {
           readtime: '2 min',
           image: './images/cards/cymot_site.png',
           title: 'CyMOT',
-          content: 'A Learning Management System (LMS) developed to deliver manufacturing specific cybersecurity content, built off of the Moodle open-source LMS.',
-          link: '/cymot'
+          content: 'A Learning Management System (LMS) developed to deliver manufacturing specific cybersecurity content, built off of the Moodle open-source LMS.'
+          // link: '/cymot'
         },
         tags: ['AWS (EC2)', 'Apache', 'MySQL', 'PHP', 'HTML/CSS/JS']
       }, {
@@ -98,8 +104,8 @@ export default {
           readtime: '8 min',
           image: './images/cards/web_portfolio.png',
           title: 'Web Portfolio',
-          content: 'This site! A personal web portfolio that I\'ve re-designed countless time, to act as a supplement to my resume and playground for web development tools.',
-          link: '#section-home'
+          content: 'This site! A personal web portfolio that I\'ve re-designed countless time, to act as a supplement to my resume and playground for web development tools.'
+          // link: '#section-home'
         },
         tags: ['Vue', 'HTML/CSS/SCSS', 'Bootstrap']
       }]

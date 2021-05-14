@@ -1,8 +1,8 @@
 <template>
-  <v-main color="transparent">
+  <v-main id="section-home" color="transparent">
+    <Hero1 />
     <Toolbar2 />
     <div>
-      <Hero1 id="section-home"/>
       <Feature6 id="section-about"/>
       <Feature15 id="section-skills"/>
       <Card1 />

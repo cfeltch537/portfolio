@@ -1,6 +1,6 @@
 <template>
   <v-container class="py-6 py-lg-12 text-left centered-text-left">
-    <h1 class="text-h4 text-sm-h3 text-md-h2 text-lg-h1">Hi, my name is <span class="primary--text">Cody Feltch</span></h1>
+    <h1 class="text-h4 text-sm-h3 text-md-h2 text-lg-h1">Hi, my name is <span class="primary--text">Cody</span></h1>
     <h1 class="text-h4 text-sm-h3 text-md-h2 text-lg-h1">I work with 
       <span class="secondary--text">
         <a href=""> 
@@ -34,7 +34,7 @@
 
   .centered-text-left{
     max-width: 1000px;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 55px);
     -webkit-flex-flow: column wrap;
     -ms-flex-flow: column wrap;
     flex-flow: column wrap;
