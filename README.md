@@ -1,21 +1,13 @@
+# portfolio by [cfeltch537](https://github.com/cfeltch537)
 
+> [vue.js](https://vuejs.org/) web portfolio for showcasing your bio, skills, projects and work experience
 
+## Setup and Build
 
-
-# Credit
-
-## brittanychiang - v4
-| github.com/bchiang7/v4
-
-While no code was used from Brittany's project, I used the overall feel of her site as inspiration for this version. 
-
-## Carbon UI Kit
-| https://indielayer.com
-
-This version of my web portfolio is based off of the Carbon UI components. The Vue UI Kit is great and worth every penny.
-
-
-# Setup and Build
+Clone
+```
+git clone https://github.com/cfeltch537/portfolio.git
+```
 
 Installs package dependencies
 ```
@@ -37,6 +29,19 @@ Lints and fixes files
 npm run lint
 ```
 
-## Forking this repo
+Lints and fixes files
+```
+npm run lint
+```
 
-Yes, you can fork this repo. Please give credit by linking back to [cfeltch537.github.com](https://cfeltch537.github.io/).
+Deploys github page
+```
+npm run deploy
+```
+
+## Credit
+
+### Carbon UI Kit
+| https://indielayer.com
+
+This version of my web portfolio is based off of the Carbon UI components. The Vue UI Kit is great and worth every penny.
