@@ -5,17 +5,18 @@
     target="_blank"
     color="#33333d" 
     outlined
+    dark
   >
     <v-img :src="post.image" height="40%" class="rounded" style="background-color:#373740;"></v-img>
-    <div class="secondary--text text--lighten-1 text-caption d-flex mt-1">
+    <div class="text-caption d-flex mt-1">
       <!-- {{ post.created }} - {{ post.readtime }} read -->
     </div>
 
     <div class="pt-2">
-      <div class="title font-weight-bold text-h5">{{ post.title }}</div>
-      <div class="secondary--text text--lighten-1 text-body-1 mt-1 mb-2">
+      <h2>{{ post.title }}</h2>
+      <p class="text-secondary font-weight-regular mt-1 mb-2">
         {{ post.content }}
-      </div>
+      </p>
 
       <v-chip 
         v-for="(tag, j) in tags"
@@ -56,3 +57,8 @@ export default {
   }
 }
 </script>
+<style scoped>
+.text-secondary{
+  color: rgba(255, 255, 255, 0.7)
+}
+</style>

@@ -15,7 +15,7 @@
         </a>
       </span>
     </h1>
-    <h2 class="text-h6 text-sm-h5 secondary--text mt-4 mx-auto">I'm an engineer working out of Baltimore, MD. I currently work as the CTO for the health technology startup Tanzen Medical, and I am available for freelance contractor work.</h2>
+    <h3 class="font-weight-regular secondary--text mt-4 mx-auto">I'm an engineer working out of Baltimore, MD. I currently work as the CTO for the health technology startup Tanzen Medical, and I am available for freelance contractor work.</h3>
     
     <div class="mt-4">
       <!-- <v-btn x-large class="my-1 mx-sm-1 w-full w-sm-auto btn-outlined">Web Resume</v-btn> -->

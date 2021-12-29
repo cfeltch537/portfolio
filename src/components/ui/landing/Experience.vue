@@ -1,13 +1,16 @@
 <template>
   <v-sheet color="#27272f">
-    <v-container class="py-4 pt-lg-8">
-      
+    <v-container class="py-4 pt-lg-8" fluid>
       <!-- Experience -->
       <div class="text-center">
-        <div class="text-uppercase font-weight-bold body-2 primary--text mb-2">History</div>
+        <div class="text-uppercase font-weight-bold body-2 primary--text mb-2">
+          History
+        </div>
         <h2 class="text-h3 text-lg-h2">Experience</h2>
         <v-responsive max-width="1200" class="mx-auto">
-          <div class="text-h6 text-lg-h5 mt-4">A timeline of my education and work history.</div>
+          <div class="text-h6 text-lg-h5 mt-4">
+            A timeline of my education and work history.
+          </div>
         </v-responsive>
       </div>
       <section id="job-history" class="main">
@@ -17,7 +20,7 @@
             <div class="cd-timeline-img cd-picture">
               <v-icon class="fa-timeline" dark>mdi-medical-bag</v-icon>
             </div>
-            <div class="cd-timeline-content">
+            <v-card class="cd-timeline-content" flat>
               <h2>Tanzen Medical</h2>
               <div class="timeline-content-info">
                 <span class="timeline-content-info-title">
@@ -30,24 +33,49 @@
                 </span>
               </div>
               <p>
-                Responsible for the developing and overseeing a technical strategy to enable
-                Tanzen's buissiness plan.
-                <br><br> Tanzen is developing the next generation of wearable in-home sleep
-                monitoring devices. We hope to bring affordable, medical grade sleep
-                assessment devices to the consumer.
+                Responsible for the developing and overseeing a technical
+                strategy to enable Tanzen's buissiness plan.
+                <br /><br />
+                Tanzen is developing the next generation of wearable in-home
+                sleep monitoring devices. We hope to bring affordable, medical
+                grade sleep assessment devices to the consumer.
               </p>
-              <ul class="content-skills">
-                <!-- <li>Leadership</li>
-											<li>Strategic Thinking</li>-->
-                <li>Android</li>
-                <li>Python</li>
-                <li>NodeJS</li>
-                <li>Vue</li>
-                <li>C</li>
-                <li>MongoDB</li>
-                <li>InfluxDB</li>
-              </ul>
-            </div>
+              <v-card-actions class="pl-0">
+                <div>
+                  <v-chip color="#27272f" class="compact-chip" small label>Android</v-chip>
+                  <v-chip color="#27272f" class="compact-chip" small label>Python</v-chip>
+                  <v-chip color="#27272f" class="compact-chip" small label>Node.js</v-chip>
+                  <v-chip color="#27272f" class="compact-chip" small label>Vue.js</v-chip>
+                  <v-chip color="#27272f" class="compact-chip" small label>C</v-chip>
+                  <v-chip color="#27272f" class="compact-chip" small label>MongoDB</v-chip>
+                  <v-chip color="#27272f" class="compact-chip" small label>InfluxDB</v-chip>
+                </div>
+
+                <v-spacer></v-spacer>
+
+                <v-btn
+                  icon
+                  @click="showRaytheon = !showRaytheon"
+                >
+                  <v-icon dark >{{ showRaytheon ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                </v-btn>
+              </v-card-actions>
+
+              <v-expand-transition>
+                <div v-show="showRaytheon">
+                  <v-divider></v-divider>
+
+                  <v-card-text class="pl-0">
+                    <div class="font-weight-regular">
+                      <p><b>Wearable Device</b> - Invented RestEaze&#8482;, an ankle worn device containing an inertial measurenemtn unit (IMU), photoplethysmography (PPG), infrared temperature and capacitive distance sensors. </p>
+                      <p><b>Machine Learning</b> - Trained classifiers to detect events of interest and estimate sleep state based on time-series data from a multi-sensor wearable device.</p>
+                      <p><b>Web Application</b> - Developed a web application to act as a dashboard for RestEaze&#8482; users. Stored time-series and statistical data. Interfaced with a flask microservice to run analytics. Contained subject management and visualization features for physicians to track and manage multiple patients. </p>
+                      <p><b>Mobile Apps</b> - Created an app to pair with the RestEaze&#8482; wearable to control and offload data from the device using Bluetooth Low Energy (BLE), then upload data to the Tanzen server.</p>
+                    </div>
+                  </v-card-text>
+                </div>
+              </v-expand-transition>
+            </v-card>
             <!-- cd-timeline-content -->
           </div>
           <!-- cd-timeline-block -->
@@ -56,7 +84,7 @@
             <div class="cd-timeline-img cd-picture">
               <v-icon class="fa-timeline" dark>mdi-heart-pulse</v-icon>
             </div>
-            <div class="cd-timeline-content">
+            <v-card class="cd-timeline-content" flat>
               <h2>DCS Corp, Army Research Lab</h2>
               <div class="timeline-content-info">
                 <span class="timeline-content-info-title">
@@ -65,30 +93,60 @@
                 </span>
                 <span class="timeline-content-info-date">
                   <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                  Oct. 2014 - Present
+                  Oct. 2014 - Oct. 2018
                 </span>
               </div>
               <p>
-                Responsible for the development of mobile and desktop applications for
-                subject data collection, networking, and participant interaction.
-                <br><br> Developed a suite on Android applications and services to view, log
-                and stream data from bluetooth sensors. Created networked applications to
-                synchronously stream and recieve data from physiological measurement
-                systems.
+                Responsible for the development of mobile and desktop
+                applications for subject data collection, storage, networking, and synchronization, to support psychophysiology research for ARL's Human Research and Engineering (HRED) directorate.
+              </p>
+              <p>
+                Developed a suite on Android apps and services to collect data from bluetooth sensors. Created networked
+                applications to stream and record data from physiological measurement systems. Wrote scripts to aggreagate, clean and process time-series data.
               </p>
               <!-- <br><br>Created a suite of Android apps for the collection and networking of physiological data from Bluetooth devices. Developed scripts for data analysis and time synchronization. Developed Java, C++, C#, and Python programs for data streaming,
 												collection, visualization, and synchronous logging. Created Arduino based sensing circuits. Developed VR applications in Unity, using SteamVR. Developed a Cross-Platform surveying web application.</p> -->
               <!-- </p> -->
-              <ul class="content-skills">
-                <li>C#</li>
-                <li>C++</li>
-                <li>Java</li>
-                <li>Python</li>
-                <li>MATLAB</li>
-                <li>Android</li>
-                <li>Unity</li>
-              </ul>
-            </div>
+              <v-card-actions class="pl-0">
+                <div>
+                  <v-chip color="#27272f" class="compact-chip" small label>C#</v-chip>
+                  <v-chip color="#27272f" class="compact-chip" small label>Java</v-chip>
+                  <v-chip color="#27272f" class="compact-chip" small label>Python</v-chip>
+                  <v-chip color="#27272f" class="compact-chip" small label>C++</v-chip>
+                  <v-chip color="#27272f" class="compact-chip" small label>MATLAB</v-chip>
+                  <v-chip color="#27272f" class="compact-chip" small label>Android</v-chip>
+                  <v-chip color="#27272f" class="compact-chip" small label>Unity</v-chip>
+                  <v-chip color="#27272f" class="compact-chip" small label>Qt</v-chip>
+                  <v-chip color="#27272f" class="compact-chip" small label>WPF</v-chip>
+                </div>
+
+                <v-spacer></v-spacer>
+
+                <v-btn
+                  icon 
+                  @click="showDCS = !showDCS"
+                >
+                  <v-icon>{{ showDCS ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                </v-btn>
+              </v-card-actions>
+
+              <v-expand-transition>
+                <div v-show="showDCS">
+                  <v-divider></v-divider>
+
+                  <v-card-text class="pl-0">
+                    <div class="font-weight-regular">
+                      <p><b>Closed Loop</b> - Developed a platform for prototyping real-time data analysis techniques and visualizations, using the open-source lab streaming layer (LSL) library for time-synchronized data/event streaming.</p>
+                      <p><b>Neurofeedback Study</b> - Developed a python application to process electroencephalogram (EEG) data and modulate the height and color of a drawable based on the users brainwave activity in real-time .</p>
+                      <p><b>Cyber Shooter Study</b> - Created a virtual reality shooting range simulator with Unity and StreamVR. Instrumented participants with physio sensors built for real-time data synchronization using the Lab Streaming Layer (LSL) framework.</p>
+                      <p><b>Real World Neuroimaging – Vehicle Driving Experiment (RWNVDE)</b> -
+                        Supported the instrumentaiton of a vehicle and participants with sensors for a psychophysiology experiment which took place while driving. Wrote scripts to aggregate, synchronize and epoch data from sensor sources.</p>
+                      <p><b>Autonomous Research Project Initiative (ARPI)</b> - Developed a user interface that acted as an automated assistant, aiding users as they made firing decisions and controlled the movement of simulated autonomous robots/sensors in a search and destroy mission.</p>
+                    </div>
+                  </v-card-text>
+                </div>
+              </v-expand-transition>
+            </v-card>
             <!-- cd-timeline-content -->
           </div>
           <!-- cd-timeline-block -->
@@ -100,42 +158,54 @@
             </div>
             <!-- cd-timeline-img -->
 
-            <div class="cd-timeline-content">
+            <v-card class="cd-timeline-content" flat>
               <h2>The Johns Hopkins University</h2>
-              <p>M.S. Electrical and Computer Engineering
-                <br> Graduated with Honors (Part-Time Student)</p>
-              <p id="courses-label" class="more-jhu hidden"><b>Courses</b></p>
-              <ul class="content-courses more-jhu hidden">
-                <li>Probability & Stochastic Processes</li>
-                <li>Digital Signal Processing</li>
-                <li>FPGA Design</li>
-                <li>Enterprise Web Development</li>
-                <li>Real-Time Computer Vision</li>
-                <li>Introduction to Pattern Recognition</li>
-                <li>Human Robotic Interation</li>
-                <li>Image Compression, Packet Video</li>
-                <li>Mobile Application Development for Android</li>
-                <li>Object-Oriented Analysis, Design</li>
-              </ul>
-              <ul class="content-skills more-jhu">
-                <li>Python</li>
-                <li>Java</li>
-                <li>MATLAB</li>
-                <li>Android</li>
-                <li>OpenCV</li>
-              </ul>
-              <!-- <button class="showhide more-jhu" onclick="showHide(self,'more-jhu');">
-                <p>Show More
-                  <i class="fa fa-caret-down" aria-hidden="true"></i>
-                </p>
-              </button>
-              <button class="showhide more-jhu hidden" onclick="showHide(self,'more-jhu');">
-                <p>Show Less
-                  <i class="fa fa-caret-up" aria-hidden="true"></i>
-                </p>
-              </button> -->
+              <p>
+                M.S. Electrical and Computer Engineering <br />
+                Graduated with Honors (Part-Time Student)
+              </p>
               <span class="cd-date">May 2017</span>
-            </div>
+              <v-card-actions class="pl-0">
+                <div>
+                  <v-chip color="#27272f" class="compact-chip" small label>Python</v-chip>
+                  <v-chip color="#27272f" class="compact-chip" small label>Java</v-chip>
+                  <v-chip color="#27272f" class="compact-chip" small label>MATLAB</v-chip>
+                  <v-chip color="#27272f" class="compact-chip" small label>Android</v-chip>
+                  <v-chip color="#27272f" class="compact-chip" small label>OpenCV</v-chip>
+                </div>
+                <v-spacer></v-spacer>
+                <v-btn
+                  icon
+                  @click="showJHU = !showJHU"
+                >
+                  <v-icon dark >{{ showJHU ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                </v-btn>
+              </v-card-actions>
+              <v-expand-transition>
+                <div v-show="showJHU">
+                  <v-divider></v-divider>
+                  <v-card-text class="pl-0 ">
+                    <h4 class="py-1"> Courses </h4>
+                    <div class="font-weight-regular">
+                      <li>Probability & Stochastic Processes</li>
+                      <li>Digital Signal Processing</li>
+                      <li>FPGA Design</li>
+                      <li>Enterprise Web Development</li>
+                      <li>Real-Time Computer Vision</li>
+                      <li>Introduction to Pattern Recognition</li>
+                      <li>Human Robotic Interation</li>
+                      <li>Image Compression, Packet Video</li>
+                      <li>Mobile Application Development for Android</li>
+                      <li>Object-Oriented Analysis, Design</li>
+                    </div>
+                    <!-- <div class="font-weight-regular">
+                      <p><b>Capstone Project</b> - Joint Architecture for Unmanned Systems (JAUS) implementation for an autonomous robot. Software implementation of communication system with broadcast discovery, data subscription and control commands. </p>
+                      <p><b>Independent Study</b> - Studied Radar and Electronic Warfare systems. Developed a MATLAB simulation of a passive emitter detection and geolocation sensor array. Created course content for an Advanced Radar and Electronic Warefare systems class. </p>
+                    </div> -->
+                  </v-card-text>
+                </div>
+              </v-expand-transition>
+            </v-card>
             <!-- cd-timeline-content -->
           </div>
 
@@ -144,7 +214,7 @@
             <div class="cd-timeline-img cd-picture">
               <v-icon class="fa-timeline" dark>mdi-airplane</v-icon>
             </div>
-            <div class="cd-timeline-content">
+            <v-card class="cd-timeline-content" flat>
               <h2>Raytheon SAS</h2>
               <div class="timeline-content-info">
                 <span class="timeline-content-info-title">
@@ -158,39 +228,42 @@
               </div>
               <div>
                 <p>
-                  Responsible for the development of system requirements, diagrams, and
-                  test set software for Identification Friend or Foe (IFF) systems.
+                  Responsible for the development of system requirements,
+                  diagrams, and test set software for Identification Friend or
+                  Foe (IFF) systems.
                 </p>
-                <p class="more-raytheon1 hidden">
-                  Wrote C based test set software to interface with GPIB and RS-232
-                  devices, for instrument control. Automated testing to minimizing manual
-                  operator interaction.
-                </p>
-                <!-- Responsible for the development of system requirements, diagrams, test set software for Identification Friend or Foe (IFF) system components.
-												<br><br> Modeled system requirement in Rational Rhapsody for specifications and code generation. Wrote C based test set software to interface with GPIB and RS-232 devices, for instrument control. Automated testing to minimizing manual operator
-												interaction. Developed test plans, procedures, and operation manuals from system requirements specifications. Allocated and maintained system requirements in Rational DOORs. -->
-                <ul class="content-skills more-raytheon1">
-                  <li>MATLAB</li>
-                  <li>Simulink</li>
-                  <li>C</li>
-                  <li>LabVIEW</li>
-                </ul>
-                <!-- <button
-                  class="showhide more-raytheon1"
-                  onclick="showHide(self,'more-raytheon1');"
-                >
-                  <p>Show More
-                    <i class="fa fa-caret-down" aria-hidden="true"></i>
-                  </p></button>
-                <button
-                  class="showhide more-raytheon1 hidden"
-                  onclick="showHide(self,'more-raytheon1');"
-                >
-                  <p>Show Less
-                    <i class="fa fa-caret-up" aria-hidden="true"></i>
-                  </p></button> -->
+                <v-card-actions class="pl-0">
+                  <div>
+                    <v-chip color="#27272f" class="compact-chip" small label>MATLAB</v-chip>
+                    <v-chip color="#27272f" class="compact-chip" small label>Simulink</v-chip>
+                    <v-chip color="#27272f" class="compact-chip" small label>C</v-chip>
+                    <v-chip color="#27272f" class="compact-chip" small label>LabVIEW</v-chip>
+                  </div>
+
+                  <v-spacer></v-spacer>
+
+                  <v-btn
+                    icon
+                    @click="showRaytheon = !showRaytheon"
+                  >
+                    <v-icon dark >{{ showRaytheon ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                  </v-btn>
+                </v-card-actions>
+
+                <v-expand-transition>
+                  <div v-show="showRaytheon">
+                    <v-divider></v-divider>
+
+                    <v-card-text class="pl-0">
+                      <div class="font-weight-regular">
+                        <p>Modeled system requirement in Rational Rhapsody for specification document and code generation. Wrote C based test set software to interface with GPIB and RS-232 devices, for instrument control. </p>
+                        <p>Automated testing to minimizing manual operator interaction. Developed test plans, procedures, and operation manuals from system requirements specifications. Allocated and maintained system requirements in Rational DOORs.</p>
+                      </div>
+                    </v-card-text>
+                  </div>
+                </v-expand-transition>
               </div>
-            </div>
+            </v-card>
             <!-- cd-timeline-content -->
           </div>
           <!-- cd-timeline-block -->
@@ -202,42 +275,53 @@
             </div>
             <!-- cd-timeline-img -->
 
-            <div class="cd-timeline-content">
+            <v-card class="cd-timeline-content" flat>
               <h2>York College of Pennsylvania</h2>
-              <p>B.S. Electrical Engineering <br> Graduated Magna Cum Laude (GPA 3.81)</p>
-              <p id="courses-label" class="more-ycp hidden"><b>Specialized Courses</b></p>
-              <ul class="content-courses more-ycp hidden">
-                <li>Communciation Networks</li>
-                <li>Communciation Systems</li>
-                <li>Automatic Controls</li>
-                <li>Applied Controls</li>
-                <li>Intro to Radar Systems</li>
-                <li>Independent Study: Radar Systems</li>
-              </ul>
-              <ul class="content-skills more-ycp">
-                <li>Java</li>
-                <li>MATLAB</li>
-                <li>C#</li>
-                <li>C++</li>
-              </ul>
-              <!-- <button class="showhide more-ycp" onclick="showHide(self,'more-ycp');">
-                <p>Show More
-                  <i class="fa fa-caret-down" aria-hidden="true"></i>
-                </p>
-              </button>
-              <button class="showhide more-ycp hidden" onclick="showHide(self,'more-ycp');">
-                <p>Show Less
-                  <i class="fa fa-caret-up" aria-hidden="true"></i>
-                </p>
-              </button> -->
-              <!-- <ul class="content-skills">
-										<li>Comm. Systems</li>
-										<li>Controls</li>
-										<li>DSP</li>
-										<li>Robotics</li>
-									</ul> -->
+              <p>
+                B.S. Electrical Engineering <br />
+                Graduated Magna Cum Laude (GPA 3.81)
+              </p>
+              
               <span class="cd-date">May 2013</span>
-            </div>
+              <v-card-actions class="pl-0">
+                <div>
+                  <v-chip color="#27272f" class="compact-chip" small label>Java</v-chip>
+                  <v-chip color="#27272f" class="compact-chip" small label>MATLAB</v-chip>
+                  <v-chip color="#27272f" class="compact-chip" small label>C#</v-chip>
+                  <v-chip color="#27272f" class="compact-chip" small label>C++</v-chip>
+                </div>
+
+                <v-spacer></v-spacer>
+
+                <v-btn
+                  icon
+                  @click="showYCP = !showYCP"
+                >
+                  <v-icon dark >{{ showYCP ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                </v-btn>
+              </v-card-actions>
+
+              <v-expand-transition>
+                <div v-show="showYCP">
+                  <v-divider></v-divider>
+
+                  <v-card-text class="pl-0">
+                    <h3 class="py-1"> Focus Areas </h3>
+                    <div class="font-weight-regular">
+                      <li>Communications and Networking</li>
+                      <li>Systems and Controls</li>
+                      <li>Signal Processing</li>
+                      <li>Radar and EW Systems</li>
+                    </div>
+                    <div class="font-weight-regular">
+                      <p><b>Capstone Project</b> - Joint Architecture for Unmanned Systems (JAUS) implementation for an autonomous robot. Software implementation of communication system with broadcast discovery, data subscription and control commands. </p>
+                      <p><b>Independent Study</b> - Studied Radar and Electronic Warfare systems. Developed a MATLAB simulation of a passive emitter detection and geolocation sensor array. Created course content for an Advanced Radar and Electronic Warefare systems class. </p>
+                      <p><b>Pokémon Web App</b> - Created a Pokémon game clone as a web app using Google web toolkit (GWT). Drafted requirements, created UML diagrams, and performed object oriented analysis. Utilized Agile development techniques to manage a 4 person team.</p>
+                    </div>
+                  </v-card-text>
+                </div>
+              </v-expand-transition>
+            </v-card>
             <!-- cd-timeline-content -->
           </div>
           <!-- cd-timeline-block -->
@@ -247,7 +331,7 @@
             <div class="cd-timeline-img cd-picture">
               <v-icon class="fa-timeline" dark>mdi-airplane</v-icon>
             </div>
-            <div class="cd-timeline-content">
+            <v-card class="cd-timeline-content" flat>
               <h2>Raytheon SAS</h2>
               <div class="timeline-content-info">
                 <span class="timeline-content-info-title">
@@ -260,20 +344,20 @@
                 </span>
               </div>
               <p>
-                Supported the allocation and modeling of Identification Friend or Foe (IFF)
-                system requirements.
+                Supported the allocation and modeling of Identification Friend
+                or Foe (IFF) system requirements.
               </p>
               <p class="more-raytheon2 hidden">
-                Modeled requirement in Rational Rhapsody for specifications and code
-                generation. Developed test plans, procedures, and manuals. Allocated and
-                maintained requirements in Rational DOORs.
+                Modeled requirement in Rational Rhapsody for specifications and
+                code generation. Developed test plans, procedures, and manuals.
+                Allocated and maintained requirements in Rational DOORs.
               </p>
-              <ul class="content-skills more-raytheon2">
-                <li>MATLAB</li>
-                <li>Rational DOORs</li>
-                <li>Rational Rhapsody</li>
-                <li>UML</li>
-              </ul>
+              <div class="more-raytheon2">
+                <v-chip color="#27272f" class="compact-chip" small label>MATLAB</v-chip>
+                <v-chip color="#27272f" class="compact-chip" small label>Rational DOORs</v-chip>
+                <v-chip color="#27272f" class="compact-chip" small label>Rational Rhapsody</v-chip>
+                <v-chip color="#27272f" class="compact-chip" small label>UML</v-chip>
+              </div>
               <!-- <button
                 class="showhide more-raytheon2"
                 onclick="showHide(self,'more-raytheon2');"
@@ -288,7 +372,7 @@
                 <p>Show Less
                   <i class="fa fa-caret-up" aria-hidden="true"></i>
                 </p></button> -->
-            </div>
+            </v-card>
             <!-- cd-timeline-content -->
           </div>
           <!-- cd-timeline-block -->
@@ -298,7 +382,20 @@
     </v-container>
   </v-sheet>
 </template>
-
+<script>
+export default {
+  data() {
+    return {
+      showTanzen: false,
+      showDCS: false,
+      showRaytheon: false,
+      showRaytheonCoop: false,
+      showYCP: false,
+      showJHU: false
+    }
+  }
+}
+</script>
 <style scoped>
 /* ------------------------------------------------------------------------ */
 /* Show/Hide */
@@ -308,15 +405,15 @@
   display: none !important;
 }
 
-button.showhide{
+button.showhide {
   background-color: #33333d;
-  color: #adadad;
+  color: rgba(255, 255, 255, 0.7);
   border: none;
   font: inherit;
   padding: 5px 20px 5px 0px;
 }
 
-button.showhide > p{
+button.showhide > p {
   margin: 0;
 }
 
@@ -331,7 +428,7 @@ button.showhide > p{
 
 .cd-container {
   /*width: 90%;*/
-  max-width: 1080px;
+  max-width: 1400px;
   margin: 0 auto;
   /*background: #2B343A;*/
   /*padding: 0 10%;*/
@@ -339,7 +436,7 @@ button.showhide > p{
 }
 
 .cd-container::after {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
@@ -361,7 +458,7 @@ button.showhide > p{
 }
 
 #cd-timeline::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 25px;
@@ -420,7 +517,8 @@ button.showhide > p{
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(94, 208, 177, 0.53), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 4px rgba(94, 208, 177, 0.53),
+    inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .cd-timeline-img {
@@ -447,11 +545,11 @@ button.showhide > p{
   /*margin-right: 30px;*/
   background: #33333d;
   /* background: #eee; */
-  max-width: 550px;
-  border-radius: 2px;
+  max-width: 650px;
+  /* border-radius: 2px; */
   padding: 1em;
   /* box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3); */
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); */
 }
 
 .cd-timeline-content .timeline-content-info {
@@ -460,21 +558,24 @@ button.showhide > p{
   /* color: #33333d; */
   padding: 5px 10px;
   font-size: 13px;
-  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.03);
-  border-radius: 2px;
+  /* box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.03);
+  border-radius: 2px; */
+  border-radius: 6px !important;
 }
 
 .cd-timeline-content .timeline-content-info i {
   margin-right: 5px;
 }
 
-.cd-timeline-content .timeline-content-info .timeline-content-info-title, .cd-timeline-content .timeline-content-info .timeline-content-info-date {
+.cd-timeline-content .timeline-content-info .timeline-content-info-title,
+.cd-timeline-content .timeline-content-info .timeline-content-info-date {
   width: calc(50% - 2px);
   display: inline-block;
 }
 
 @media (max-width: 500px) {
-  .cd-timeline-content .timeline-content-info .timeline-content-info-title, .cd-timeline-content .timeline-content-info .timeline-content-info-date {
+  .cd-timeline-content .timeline-content-info .timeline-content-info-title,
+  .cd-timeline-content .timeline-content-info .timeline-content-info-date {
     display: block;
     width: 100%;
   }
@@ -494,7 +595,7 @@ button.showhide > p{
   border-radius: 2px;
   display: inline-block;
   padding: 2px 10px;
-  color: #FFF;
+  color: #fff;
   margin: 3px 2px;
   text-align: center;
   flex-grow: 1;
@@ -513,7 +614,7 @@ p#courses-label {
 }
 
 .cd-timeline-content .content-courses li {
-  padding-left: 0.0em;
+  padding-left: 0em;
   font-weight: normal;
 }
 
@@ -540,13 +641,23 @@ cd-timeline-content .content-courses li::before {
 .cd-timeline-content h2 {
   font-size: 1.5em;
   line-height: 1.5em;
-  color: #FFF;
+  color: #fff;
   margin-top: 0;
   margin-bottom: 5px;
 }
 
-.cd-timeline-content p, .cd-timeline-content .cd-date, .cd-timeline-content .content-courses {
-  color: #adadad;
+.cd-timeline-content h4 {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.cd-timeline-content p,
+.cd-timeline-content li,
+.cd-timeline-content .cd-date,
+.cd-timeline-content .content-courses {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 300;
+  line-height: 1.375rem;
+    letter-spacing: 0.0071428571em;
 }
 
 .cd-timeline-content .cd-date {
@@ -559,17 +670,17 @@ cd-timeline-content .content-courses li::before {
 }
 
 .cd-timeline-content::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 16px;
   right: 100%;
   height: 0;
   width: 0;
   border: 7px solid transparent;
-  border-right: 7px solid #333C42;
+  border-right: 7px solid #333c42;
 }
 
-.cd-timeline-content h2{
+.cd-timeline-content h2 {
   line-height: 1.5em;
 }
 
@@ -600,7 +711,7 @@ cd-timeline-content .content-courses li::before {
     top: 24px;
     left: 100%;
     border-color: transparent;
-    border-left-color: #333C42;
+    border-left-color: #333c42;
   }
   .cd-timeline-content .cd-date {
     position: absolute;
@@ -618,7 +729,7 @@ cd-timeline-content .content-courses li::before {
     left: auto;
     right: 100%;
     border-color: transparent;
-    border-right-color: #333C42;
+    border-right-color: #333c42;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
     float: right;
@@ -628,5 +739,13 @@ cd-timeline-content .content-courses li::before {
     right: 122%;
     text-align: right;
   }
+}
+.compact-chip{
+  margin-right: 4px;
+  margin-top: 4px;
+}
+
+.theme--dark.v-btn:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined) {
+    background-color: #00000000;
 }
 </style>

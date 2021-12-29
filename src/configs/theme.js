@@ -8,7 +8,7 @@ export default {
     background: '#27272f',
     surface: '#33333d',
     primary: '#64ffda',
-    secondary: '#adadad',
+    secondary: '#dadada',
     accent: '#64ffda',
     error: '#FF5252',
     info: '#2196F3',

@@ -46,6 +46,8 @@ const router = new Router({
         selector: to.hash,
         behavior: 'smooth'
       }
+    } else {
+      return null
     }
   },
   routes

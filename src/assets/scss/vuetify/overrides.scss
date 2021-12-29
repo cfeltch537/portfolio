@@ -2,6 +2,10 @@
  * Vuetify Styles Overrides
  */
 
+b, strong {
+  font-weight: 600;
+}
+
 // Flex min-width: 0
 .v-application .d-flex {
   min-width: 0;
@@ -70,4 +74,8 @@
 // Carousel
 .v-window__prev, .v-window__next {
   background: none !important;
+}
+
+.theme--dark.v-chip:hover {
+  color: var(--v-primary-base) !important;
 }

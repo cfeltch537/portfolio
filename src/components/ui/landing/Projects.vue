@@ -2,8 +2,8 @@
   <v-container class="py-10">
     <div style="width: 80px; height: 4px" class="mb-3 accent" />
     <h2 class="text-h4 mb-3">Projects</h2>
-    <div class="text-h6 text-lg-h5 mt-4">A subset of the project I have worked on.</div>
-    <div class="text-h8 text-lg-h7 mb-3"><i>Note: I cannot show images/screenchots of the actual end-product for some of these as they are proprietaty.</i></div>
+    <div class="text-h6 text-lg-h5 mt-4">Some of the project I have worked on</div>
+    <div class="text-h8 text-lg-h7 mb-3 text-lighten-1"><i>Note: I cannot show images of some proprietaty project.</i></div>
 
     <v-row>
       <v-col
@@ -39,10 +39,10 @@ export default {
           readtime: '13 min',
           image: './images/cards/resteaze.png',
           title: 'RestEaze Sleep Monitor',
-          content: 'A wearable device, mobile app, web service and machine learners. Designed as an en-to-end solution for monitoring biomarkers of sleep disorder through leg movements during sleep.'
+          content: 'A wearable device, mobile app, web service and machine learners. Designed as an end-to-end solution for monitoring biomarkers of sleep disorder through leg movements during sleep.'
           // link: '/tanzen'
         },
-        tags: ['ARM', 'BLE', 'Android/iOS', 'SQL', 'MEVN', 'Machine Learning']
+        tags: ['ARM', 'BLE', 'Android', 'SQL', 'MongoDB', 'Vue.js']
       }, {
         user: {
           name: 'Cody Feltch'

@@ -1,38 +1,38 @@
 <template>
   <v-main id="section-home" color="transparent">
-    <Hero1 />
-    <Toolbar2 />
+    <Intro />
+    <Toolbar />
     <div>
-      <Feature6 id="section-about"/>
-      <Feature15 id="section-skills"/>
-      <Card1 />
-      <Stats4 id="section-experience"/>
-      <Card4 id="section-projects"/>
+      <About id="section-about"/>
+      <SkillsAreas id="section-skills"/>
+      <SkillsTools />
+      <Experience id="section-experience"/>
+      <Projects id="section-projects"/>
     </div>
-    <Footer8 />
+    <Footer />
   </v-main>
 </template>
 
 <script>
-import Hero1 from '@/components/ui/landing/Intro.vue'
-import Toolbar2 from '@/components/ui/landing/Toolbar.vue'
-import Feature6 from '@/components/ui/landing/About.vue'
-import Feature15 from '@/components/ui/landing/SkillsAreas.vue'
-import Card1 from '@/components/ui/landing/SkillsTools.vue'
-import Stats4 from '@/components/ui/landing/Experience.vue'
-import Card4 from '@/components/ui/landing/Projects.vue'
-import Footer8 from '@/components/ui/landing/Footer.vue'
+import Intro from '@/components/ui/landing/Intro.vue'
+import Toolbar from '@/components/ui/landing/Toolbar.vue'
+import About from '@/components/ui/landing/About.vue'
+import SkillsAreas from '@/components/ui/landing/SkillsAreas.vue'
+import SkillsTools from '@/components/ui/landing/SkillsTools.vue'
+import Experience from '@/components/ui/landing/Experience.vue'
+import Projects from '@/components/ui/landing/Projects.vue'
+import Footer from '@/components/ui/landing/Footer.vue'
 
 export default {
   components: {
-    Hero1,
-    Toolbar2,
-    Feature6,
-    Stats4,
-    Card1,
-    Feature15,
-    Card4,
-    Footer8
+    Intro,
+    Toolbar,
+    About,
+    Experience,
+    SkillsTools,
+    SkillsAreas,
+    Projects,
+    Footer
   }
 }
 </script>

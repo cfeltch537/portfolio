@@ -7,20 +7,20 @@
       </div>
     </v-card-title>
     <v-card-text class="flex-grow-1">
+      <div class="font-weight-regular">
+        {{ description }}
+      </div>
       <div>
         <v-chip 
           v-for="(tag, j) in tags"
           :key="j"
           color="#27272f"
-          class="mr-1 mb-1"
+          class="mr-1 mt-1"
           small
           label
         >
           {{ tag }}
         </v-chip>
-      </div>
-      <div>
-        {{ description }}
       </div>
     </v-card-text>
     <!-- <v-card-actions>
