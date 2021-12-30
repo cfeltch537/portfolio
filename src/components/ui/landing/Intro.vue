@@ -17,9 +17,82 @@
     </h1>
     <h3 class="font-weight-regular secondary--text mt-4 mx-auto">I'm an engineer working out of Baltimore, MD. I currently work as the CTO for the health technology startup Tanzen Medical, and I am available for freelance contractor work.</h3>
     
-    <div class="mt-4">
+    <div class="mt-2">
       <!-- <v-btn x-large class="my-1 mx-sm-1 w-full w-sm-auto btn-outlined">Web Resume</v-btn> -->
-      <v-btn x-large href="Resume.pdf" class="my-1 mx-sm-1 w-full w-sm-auto btn-outlined">Resume</v-btn>
+      <div class="d-flex align-center justify-start mt-1">
+        <!-- Resume -->
+        <v-tooltip bottom color="#33333d">
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn
+              icon
+              href="Resume.pdf"
+              target="_blank"
+              color="secondary lighten-2"
+              class="mx-1"
+              style="background-color:#27272f;"
+              v-bind="attrs"
+              v-on="on"
+            >
+              <v-icon>mdi-file-document</v-icon>
+            </v-btn>
+          </template>
+          <span>Resume</span>
+        </v-tooltip>
+        <!-- Linkedin -->
+        <v-tooltip bottom color="#33333d">
+          <template v-slot:activator="{ on, attrs }">
+            <router-link
+              to="/linkedin"
+              target="_blank"
+              style="text-decoration: none;"
+            > <v-btn
+              icon
+              v-bind="attrs"
+              v-on="on"
+              color="secondary lighten-2"
+              class="mx-1"
+              style="background-color:#27272f;"
+            ><v-icon>mdi-linkedin</v-icon></v-btn></router-link>
+          </template>
+          <span>LinkedIn</span>
+        </v-tooltip>
+        <!-- Linkedin -->
+        <v-tooltip bottom color="#33333d">
+          <template v-slot:activator="{ on, attrs }">
+            <router-link
+              to="/github"
+              target="_blank"
+              style="text-decoration: none;"
+            > <v-btn
+              icon
+              v-bind="attrs"
+              v-on="on"
+              color="secondary lighten-2"
+              class="mx-1"
+              style="background-color:#27272f;"
+            ><v-icon>mdi-github</v-icon></v-btn></router-link>
+          </template>
+          <span>Github</span>
+        </v-tooltip>
+        <!-- Linkedin -->
+        <v-tooltip bottom color="#33333d">
+          <template v-slot:activator="{ on, attrs }">
+            <router-link
+              to="/stackoverflow"
+              target="_blank"
+              style="text-decoration: none;"
+            > <v-btn
+              icon
+              v-bind="attrs"
+              v-on="on"
+              color="secondary lighten-2"
+              class="mx-1"
+              style="background-color:#27272f;"
+            ><v-icon>mdi-stack-overflow</v-icon></v-btn></router-link>
+          </template>
+          <span>StackOverflow</span>
+        </v-tooltip>
+      </div>
     </div>
   </v-container>
 </template>

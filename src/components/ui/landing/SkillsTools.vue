@@ -34,7 +34,7 @@ export default {
       }, {
         title: 'Front-End Tools',
         tags: ['HTML', 'CSS', 'Vue.js', 'React', 'Bootstrap', 'EJS', 'Plotly'],
-        description: 'I enjoy front-end design and development because I am a creative type. I like the modularity of the modern JS frameworks, and have experience with Vue.js and React.',
+        description: 'I enjoy front-end design and development because I\'m a creative type. I like the modularity of the modern JS frameworks, and have experience with Vue.js and React.',
         to: '#2'
       }, {
         title: 'Back-End Tools',

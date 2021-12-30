@@ -55,14 +55,14 @@
 
                 <v-btn
                   icon
-                  @click="showRaytheon = !showRaytheon"
+                  @click="showTanzen = !showTanzen"
                 >
-                  <v-icon dark >{{ showRaytheon ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                  <v-icon dark >{{ showTanzen ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
                 </v-btn>
               </v-card-actions>
 
               <v-expand-transition>
-                <div v-show="showRaytheon">
+                <div v-show="showTanzen">
                   <v-divider></v-divider>
 
                   <v-card-text class="pl-0">
@@ -104,9 +104,6 @@
                 Developed a suite on Android apps and services to collect data from bluetooth sensors. Created networked
                 applications to stream and record data from physiological measurement systems. Wrote scripts to aggreagate, clean and process time-series data.
               </p>
-              <!-- <br><br>Created a suite of Android apps for the collection and networking of physiological data from Bluetooth devices. Developed scripts for data analysis and time synchronization. Developed Java, C++, C#, and Python programs for data streaming,
-												collection, visualization, and synchronous logging. Created Arduino based sensing circuits. Developed VR applications in Unity, using SteamVR. Developed a Cross-Platform surveying web application.</p> -->
-              <!-- </p> -->
               <v-card-actions class="pl-0">
                 <div>
                   <v-chip color="#27272f" class="compact-chip" small label>C#</v-chip>
@@ -226,43 +223,41 @@
                   Aug. 2013 - Oct. 2014
                 </span>
               </div>
-              <div>
-                <p>
-                  Responsible for the development of system requirements,
-                  diagrams, and test set software for Identification Friend or
-                  Foe (IFF) systems.
-                </p>
-                <v-card-actions class="pl-0">
-                  <div>
-                    <v-chip color="#27272f" class="compact-chip" small label>MATLAB</v-chip>
-                    <v-chip color="#27272f" class="compact-chip" small label>Simulink</v-chip>
-                    <v-chip color="#27272f" class="compact-chip" small label>C</v-chip>
-                    <v-chip color="#27272f" class="compact-chip" small label>LabVIEW</v-chip>
-                  </div>
+              <p>
+                Responsible for the development of system requirements,
+                diagrams, and test set software for Identification Friend or
+                Foe (IFF) systems.
+              </p>
+              <v-card-actions class="pl-0">
+                <div>
+                  <v-chip color="#27272f" class="compact-chip" small label>MATLAB</v-chip>
+                  <v-chip color="#27272f" class="compact-chip" small label>Simulink</v-chip>
+                  <v-chip color="#27272f" class="compact-chip" small label>C</v-chip>
+                  <v-chip color="#27272f" class="compact-chip" small label>LabVIEW</v-chip>
+                </div>
 
-                  <v-spacer></v-spacer>
+                <v-spacer></v-spacer>
 
-                  <v-btn
-                    icon
-                    @click="showRaytheon = !showRaytheon"
-                  >
-                    <v-icon dark >{{ showRaytheon ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                  </v-btn>
-                </v-card-actions>
+                <v-btn
+                  icon
+                  @click="showRaytheon = !showRaytheon"
+                >
+                  <v-icon dark >{{ showRaytheon ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                </v-btn>
+              </v-card-actions>
 
-                <v-expand-transition>
-                  <div v-show="showRaytheon">
-                    <v-divider></v-divider>
+              <v-expand-transition>
+                <div v-show="showRaytheon">
+                  <v-divider></v-divider>
 
-                    <v-card-text class="pl-0">
-                      <div class="font-weight-regular">
-                        <p>Modeled system requirement in Rational Rhapsody for specification document and code generation. Wrote C based test set software to interface with GPIB and RS-232 devices, for instrument control. </p>
-                        <p>Automated testing to minimizing manual operator interaction. Developed test plans, procedures, and operation manuals from system requirements specifications. Allocated and maintained system requirements in Rational DOORs.</p>
-                      </div>
-                    </v-card-text>
-                  </div>
-                </v-expand-transition>
-              </div>
+                  <v-card-text class="pl-0">
+                    <div class="font-weight-regular">
+                      <p>Modeled system requirement in Rational Rhapsody for specification document and code generation. Wrote C based test set software to interface with GPIB and RS-232 devices, for instrument control. </p>
+                      <p>Automated testing to minimizing manual operator interaction. Developed test plans, procedures, and operation manuals from system requirements specifications. Allocated and maintained system requirements in Rational DOORs.</p>
+                    </div>
+                  </v-card-text>
+                </div>
+              </v-expand-transition>
             </v-card>
             <!-- cd-timeline-content -->
           </div>

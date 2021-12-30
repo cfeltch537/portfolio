@@ -9,9 +9,24 @@
         <router-link to="#section-projects" class="text-decoration-none mx-2 mb-1">Projects</router-link>
       </div>
       <div class="d-flex align-center justify-center mt-4">
-        <v-btn icon color="secondary lighten-2" class="mx-1" style="background-color:#27272f;"><v-icon>mdi-linkedin</v-icon></v-btn>
-        <v-btn icon color="secondary lighten-2" class="mx-1" style="background-color:#27272f;"><v-icon>mdi-github</v-icon></v-btn>
-        <v-btn icon color="secondary lighten-2" class="mx-1" style="background-color:#27272f;"><v-icon>mdi-stack-overflow</v-icon></v-btn>
+        <router-link to="/linkedin" target="_blank" style="text-decoration: none;"> <v-btn
+          icon
+          color="secondary lighten-2"
+          class="mx-1"
+          style="background-color:#27272f;"
+        ><v-icon>mdi-linkedin</v-icon></v-btn></router-link>
+        <router-link to="/github" target="_blank" style="text-decoration: none;"><v-btn
+          icon
+          color="secondary lighten-2"
+          class="mx-1"
+          style="background-color:#27272f;"
+        ><v-icon>mdi-github</v-icon></v-btn></router-link>
+        <router-link to="/stackoverflow" target="_blank" style="text-decoration: none;"><v-btn
+          icon
+          color="secondary lighten-2"
+          class="mx-1"
+          style="background-color:#27272f;"
+        ><v-icon>mdi-stack-overflow</v-icon></v-btn></router-link>
       </div>
       <div class="d-flex flex-column flex-sm-row align-center justify-center mt-4 overline">
         <div class="secondary--text">© 2021 Cody G. Feltch. All rights reserved.</div>
