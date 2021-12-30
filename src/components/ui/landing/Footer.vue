@@ -9,19 +9,19 @@
         <router-link to="#section-projects" class="text-decoration-none mx-2 mb-1">Projects</router-link>
       </div>
       <div class="d-flex align-center justify-center mt-4">
-        <router-link to="/linkedin" target="_blank" style="text-decoration: none;"> <v-btn
+        <router-link :to="{ name: 'linkedin'}" target="_blank" style="text-decoration: none;"> <v-btn
           icon
           color="secondary lighten-2"
           class="mx-1"
           style="background-color:#27272f;"
         ><v-icon>mdi-linkedin</v-icon></v-btn></router-link>
-        <router-link to="/github" target="_blank" style="text-decoration: none;"><v-btn
+        <router-link :to="{ name: 'github'}" target="_blank" style="text-decoration: none;"><v-btn
           icon
           color="secondary lighten-2"
           class="mx-1"
           style="background-color:#27272f;"
         ><v-icon>mdi-github</v-icon></v-btn></router-link>
-        <router-link to="/stackoverflow" target="_blank" style="text-decoration: none;"><v-btn
+        <router-link :to="{ name: 'stackoverflow'}" target="_blank" style="text-decoration: none;"><v-btn
           icon
           color="secondary lighten-2"
           class="mx-1"

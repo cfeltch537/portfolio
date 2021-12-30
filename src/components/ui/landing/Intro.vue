@@ -42,7 +42,7 @@
         <v-tooltip bottom color="#33333d">
           <template v-slot:activator="{ on, attrs }">
             <router-link
-              to="/linkedin"
+            :to="{ name: 'linkedin'}"
               target="_blank"
               style="text-decoration: none;"
             > <v-btn
@@ -60,7 +60,7 @@
         <v-tooltip bottom color="#33333d">
           <template v-slot:activator="{ on, attrs }">
             <router-link
-              to="/github"
+            :to="{ name: 'github'}"
               target="_blank"
               style="text-decoration: none;"
             > <v-btn
@@ -78,7 +78,7 @@
         <v-tooltip bottom color="#33333d">
           <template v-slot:activator="{ on, attrs }">
             <router-link
-              to="/stackoverflow"
+            :to="{ name: 'stackoverflow'}"
               target="_blank"
               style="text-decoration: none;"
             > <v-btn

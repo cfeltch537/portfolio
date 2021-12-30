@@ -29,11 +29,6 @@ Lints and fixes files
 npm run lint
 ```
 
-Lints and fixes files
-```
-npm run lint
-```
-
 Deploys github page
 ```
 npm run deploy
