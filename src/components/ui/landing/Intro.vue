@@ -41,54 +41,48 @@
         <!-- Linkedin -->
         <v-tooltip bottom color="#33333d">
           <template v-slot:activator="{ on, attrs }">
-            <router-link
-            :to="{ name: 'linkedin'}"
+            <v-btn
+              href="https://www.linkedin.com/in/codyfeltch/"
               target="_blank"
-              style="text-decoration: none;"
-            > <v-btn
               icon
               v-bind="attrs"
               color="secondary lighten-2"
               class="mx-1"
               style="background-color:#27272f;"
               v-on="on"
-            ><v-icon>mdi-linkedin</v-icon></v-btn></router-link>
+            ><v-icon>mdi-linkedin</v-icon></v-btn>
           </template>
           <span>LinkedIn</span>
         </v-tooltip>
         <!-- Linkedin -->
         <v-tooltip bottom color="#33333d">
           <template v-slot:activator="{ on, attrs }">
-            <router-link
-            :to="{ name: 'github'}"
+            <v-btn
+              href="https://github.com/cfeltch537"
               target="_blank"
-              style="text-decoration: none;"
-            > <v-btn
               icon
               v-bind="attrs"
               color="secondary lighten-2"
               class="mx-1"
               style="background-color:#27272f;"
               v-on="on"
-            ><v-icon>mdi-github</v-icon></v-btn></router-link>
+            ><v-icon>mdi-github</v-icon></v-btn>
           </template>
           <span>Github</span>
         </v-tooltip>
         <!-- Linkedin -->
         <v-tooltip bottom color="#33333d">
           <template v-slot:activator="{ on, attrs }">
-            <router-link
-            :to="{ name: 'stackoverflow'}"
-              target="_blank"
-              style="text-decoration: none;"
-            > <v-btn
+            <v-btn
               icon
+              href="https://stackoverflow.com/users/3981034/codyf"
+              target="_blank"
               v-bind="attrs"
               color="secondary lighten-2"
               class="mx-1"
               style="background-color:#27272f;"
               v-on="on"
-            ><v-icon>mdi-stack-overflow</v-icon></v-btn></router-link>
+            ><v-icon>mdi-stack-overflow</v-icon></v-btn>
           </template>
           <span>StackOverflow</span>
         </v-tooltip>
