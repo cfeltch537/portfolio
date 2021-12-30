@@ -48,10 +48,10 @@
             > <v-btn
               icon
               v-bind="attrs"
-              v-on="on"
               color="secondary lighten-2"
               class="mx-1"
               style="background-color:#27272f;"
+              v-on="on"
             ><v-icon>mdi-linkedin</v-icon></v-btn></router-link>
           </template>
           <span>LinkedIn</span>
@@ -66,10 +66,10 @@
             > <v-btn
               icon
               v-bind="attrs"
-              v-on="on"
               color="secondary lighten-2"
               class="mx-1"
               style="background-color:#27272f;"
+              v-on="on"
             ><v-icon>mdi-github</v-icon></v-btn></router-link>
           </template>
           <span>Github</span>
@@ -84,10 +84,10 @@
             > <v-btn
               icon
               v-bind="attrs"
-              v-on="on"
               color="secondary lighten-2"
               class="mx-1"
               style="background-color:#27272f;"
+              v-on="on"
             ><v-icon>mdi-stack-overflow</v-icon></v-btn></router-link>
           </template>
           <span>StackOverflow</span>
