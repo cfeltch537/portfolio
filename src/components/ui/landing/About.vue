@@ -1,15 +1,13 @@
 <template>
   <v-sheet color="#33333d">
     <div id="section-about" class="d-flex flex-column flex-lg-row">
-      <div class="w-full w-lg-half">
-        <v-img src="@/assets/images/park.jpg" height="100%" max-height="100vh" alt=""></v-img>
+      <div class="col-12 col-lg-4 col-xl-6 no-padding">
+        <v-img id="about-me-img" src="@/assets/images/park.jpg" alt=""></v-img>
       </div>
-      <div class="w-full w-lg-half d-flex align-center">
+      <div class="col-12 col-lg-8 col-xl-6 no-padding d-flex align-center">
         <div class="pa-6 pa-md-12">
           <v-responsive max-width="900">
-            <div
-              class="text-uppercase font-weight-bold body-2 primary--text mb-2"
-            >
+            <div class="text-uppercase font-weight-bold body-2 primary--text mb-2">
               About Me
             </div>
             <h2 class="text-h3 text-lg-h2">Software Engineer</h2>
@@ -22,7 +20,8 @@
                 digital comms and signal processing, then I realized I had a
                 passion for software. I obtained my
                 <b>M.S. in Computer Engineering</b> while
-                working full-time. Since then, I've been working in roles as software engineer, software contractor and CTO.
+                working full-time. Since then, I've been working in roles as software engineer, software contractor and
+                CTO.
               </p>
               <p class="font-weight-regular">
                 I write code, model systems and prototype new technologies. I've
@@ -55,3 +54,20 @@
     </div>
   </v-sheet>
 </template>
+<style scoped>
+#about-me-img {
+  height: 100%;
+  max-height: 100vh;
+  object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  #about-me-img {
+    max-height: 200vh;
+  }
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+</style>

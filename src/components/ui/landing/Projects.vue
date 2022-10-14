@@ -37,7 +37,7 @@ export default {
           category: 'Business',
           created: 'Sep 21, 2020',
           readtime: '13 min',
-          image: './images/cards/resteaze.png',
+          image: './images/cards/tanzen.png',
           title: 'RestEaze Sleep Monitor',
           content: 'A wearable device, mobile app, web service and machine learners. Designed as an end-to-end solution for monitoring biomarkers of sleep disorder through leg movements during sleep.'
           // link: '/tanzen'
@@ -65,7 +65,7 @@ export default {
           category: 'Business',
           created: 'Sep 21, 2020',
           readtime: '13 min',
-          image: './images/cards/closed_loop.png',
+          image: './images/cards/closed_loop2.png',
           title: 'Closed Loop',
           content: 'A platform for prototyping real-time data analysis techniques and visualizations, usin the open-source lab streaming layer (LSL) library for time-synchronized data/event streaming.'        },
         tags: ['Python', 'numpy', 'scipy', 'scikit-learn', 'biosppy']

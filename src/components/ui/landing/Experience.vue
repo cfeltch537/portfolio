@@ -33,12 +33,10 @@
                 </span>
               </div>
               <p>
-                Responsible for the developing and overseeing a technical
-                strategy to enable Tanzen's buissiness plan.
+                Responsible for the implementing a technical strategy and buissiness plan to enable Tanzen Medical's mission - <i>to make the monitoring of leg movements during sleep accessible for the entire population of physicians and patients.</i>
                 <br /><br />
-                Tanzen is developing the next generation of wearable in-home
-                sleep monitoring devices. We hope to bring affordable, medical
-                grade sleep assessment devices to the consumer.
+                Led the development of a clinically accurate, wearable assessment device for the diagnosis and treatment
+                of sleep movement disorders.
               </p>
               <v-card-actions class="pl-0">
                 <div>
