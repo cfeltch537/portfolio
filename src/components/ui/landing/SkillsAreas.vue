@@ -41,27 +41,27 @@ export default {
       features: [{
         icon: 'mdi-xml',
         title: 'Web Development',
-        description: 'I\'ve been working with web technology since college, initially using conventional HTML/CSS/JS for static sites. I\'ve recently implemented MEVN and MERN stacks for complicated web dashboards and interfaces.'
+        description: 'Extensive experience with full-stack web development. Started with foundational HTML/CSS/JS for static websites. Evolved to implementing complex dashboards and progressive web apps in React and Vue, with Node/Express or AWS backends.'
       }, {
         icon: 'mdi-cellphone',
         title: 'Mobile Development',
-        description: 'I\'ve created Android apps for physiological data collection for the Army Research lab and Tanzen Medical. My apps have communicated with BLE devices, utilized native device sensors, stored data and interfaced with web APIs.'
+        description: 'Developed Android applications for physiological data collection at the Army Research Lab and Tanzen Medical. Leveraged Bluetooth Low Energy (BLE) communication, native device sensors, and web API integration for data collection and interaction.'
       }, {
         icon: 'mdi-database',
         title: 'Database Design',
-        description: 'Data storage, transmission and processing has been integral to most of my projects. As a result I\'ve worked with many differnet SQL and No-SQL storage solutions, and designed schema for both time-series and relational databases.'
+        description: 'Adept in data management, leveraging diverse SQL and NoSQL solutions to address project-specific storage, transmission, and processing needs. Proven ability to design efficient schemas for time-series and relational databases.'
       }, {
         icon: 'mdi-waveform',
         title: 'Signal Processing',
-        description: 'I\'ve been doing signal processing since my time as an Electrical Engineering student. I\'m experienced at cleaning, processing (i.e. fitering, transforming, etc.) and preparing data for classification.'
+        description: 'Strong background in signal processing, with experience gained from my Electrical Engineering studies and subsequent projects. Proven ability to clean, process (i.e. fitering, transforming, etc.) and prepare data for classification.'
       }, {
         icon: 'mdi-math-compass',
         title: 'Statistics & Machine Learning',
-        description: 'I studied machine learning and pattern recognition concepts, and applied them in computer vision and robotics courses. I\'ve created models for binary and multi-label classification of physiological data (EEG, Movement) for Tanzen Medical.'
+        description: 'Studied machine learning concepts in coursework. Developed machine learning models for binary and multi-label classification of physiological time-series data at ARL and Tanzen Medical. Worked extensively with pandas, numpy and scikit-learn.'
       }, {
         icon: 'mdi-access-point-network',
         title: 'Data Communications & Networking',
-        description: 'My work for the Army Research Lab and Tanzen has revolved around the transmission of data for storage and processing. I\'ve written applicaitons for BLE communication, multi-cast discovery, data broadcasting and TCP/IP sockets.'
+        description: 'Designed and implemented applications for data transmission protocols (Bluetooth/BLE communication, multicast discovery, data broadcasting, TCP/IP sockets) at the Army Research Lab and Tanzen Medical, facilitating efficient data transmission and device discovery.'
       }]
     }
   }
